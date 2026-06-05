@@ -9,35 +9,42 @@
   <meta name="description" content="HSDC 공식 소개 페이지입니다." />
 
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/main.js" defer></script>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="./index.html" aria-label="HSDC home">
-        HSDC
+        <img src="./images/HSDC.png" alt="HSDC" />
       </a>
 
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="./about/">소개</a>
-        <a href="./products/">제품</a>
-        <a href="./contact/">문의</a>
-        <a
-          class="nav-cta"
-          href="https://blog.naver.com/prologue/PrologueList.naver?blogId=hsdc2023&parentCategoryNo=1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            Blog
-        </a>
-        <a
-          class="nav-cta"
-          href="https://외부쇼핑몰주소.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          쇼핑몰
-        </a>
+        <div class="nav-links">
+            <a href="./about/">Company Overview</a>
+            <a href="./works/">Works</a>
+            <a href="./contact/">Contact</a>
+        </div>
+        
+        <div class="nav-actions">
+            <a
+            class="nav-cta"
+            href="https://blog.naver.com/prologue/PrologueList.naver?blogId=hsdc2023&parentCategoryNo=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+                Blog
+            </a>
+            <a
+            class="nav-cta"
+            href="https://외부쇼핑몰주소.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            쇼핑몰
+            </a>
+        </div>
+        
       </nav>
     </div>
   </header>
@@ -46,30 +53,17 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-content">
-          <p class="eyebrow">Official Website</p>
-          <h1>HSDC 메인 소개 문구</h1>
-          <p class="hero-description">
-            여기에 브랜드, 제품, 서비스의 핵심 설명을 넣습니다.
-            방문자가 첫 화면에서 바로 이해할 수 있도록 짧고 명확하게 작성합니다.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="button button-primary"
-              href="https://외부쇼핑몰주소.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              제품 보러가기
-            </a>
-            <a class="button button-secondary" href="./about/">
-              자세히 보기
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <img src="./images/hero.jpg" alt="HSDC 대표 이미지" />
+          <h1 class="hero-title" data-hero-title>
+            <span class="hero-abbreviation" aria-label="HSDC">
+              <span class="letter-h">H</span><span class="letter-s">S</span><span class="letter-d">D</span><span class="letter-c">C</span>
+            </span>
+            <span class="hero-phrase">
+              <span class="hero-word"><span class="hero-initial letter-h">H</span>appy</span>
+              <span class="hero-word"><span class="hero-initial letter-s">S</span>tory</span>
+              <span class="hero-word"><span class="hero-initial letter-d">D</span>esign</span>
+              <span class="hero-word"><span class="hero-initial letter-c">C</span>oncept</span>
+            </span>
+          </h1>
         </div>
       </div>
     </section>
@@ -142,21 +136,23 @@
     </section>
 
     <section class="section contact-preview">
-      <div class="container two-column">
-        <div>
-          <p class="section-label">Contact</p>
-          <h2>문의</h2>
-        </div>
+      <div class="container contact-inner">
+        <h2 class="contact-title">CONTACT</h2>
 
         <div>
           <p>
-            문의가 필요한 경우 아래 연락처 또는 문의 페이지를 이용하세요.
+             <strong class="contact-label">EMAIL.</strong>
+            hsdc2023@naver.com
           </p>
           <p>
-            Email:
-            <a href="mailto:example@example.com">example@example.com</a>
+             <strong class="contact-label">사업자등록번호. </strong>
+            210-87-01650
           </p>
-          <a class="text-link" href="./contact/">문의 페이지로 이동</a>
+          <p>
+            <strong class="contact-label">ADDRESS.</strong>
+            충남 청양군 청양읍 충청로 1096-5
+          </p>
+          
         </div>
       </div>
     </section>
