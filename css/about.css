@@ -1,0 +1,258 @@
+/* Sub pages */
+
+.page-title-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: min(100% - 32px, 760px);
+  margin: 46px auto 0;
+  color: var(--color-primary);
+  font-size: 0.92rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.page-title-line::before,
+.page-title-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(217, 225, 236, 0),
+    rgba(101, 112, 131, 0.32)
+  );
+}
+
+.page-title-line::after {
+  transform: scaleX(-1);
+}
+
+.about-page-intro {
+  margin-top: 36px;
+  background: var(--color-about-soft);
+}
+
+.about-page-intro-inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-page-intro .about-logo {
+  width: min(100%, 300px);
+  margin: 0 auto 34px;
+}
+
+.about-page-intro h1 {
+  max-width: none;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  letter-spacing: -0.04em;
+}
+
+.about-page-detail {
+  background: var(--color-white);
+}
+
+.about-whatdo-section {
+  color: var(--color-white);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../images/배경1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-whatdo-design-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../images/배경2.png");
+}
+
+.about-whatdo-export-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../images/배경3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-whatdo-inner {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.about-whatdo-inner h2 {
+  margin-bottom: 36px;
+  color: var(--color-white);
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  letter-spacing: 0;
+}
+
+.about-whatdo-inner img {
+  width: min(100%, 820px);
+  height: auto;
+}
+
+.about-whatdo-inner p {
+  max-width: 760px;
+  margin: 34px auto 0;
+  color: var(--color-white);
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.about-whatdo-design-section .about-whatdo-inner p,
+.about-whatdo-export-section .about-whatdo-inner p {
+  max-width: 980px;
+}
+
+.about-whatdo-image-section {
+  background: var(--color-white);
+}
+
+.about-whatdo-image-section img {
+  width: min(100%, 820px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.about-homepage-section {
+  background: #fff1c8;
+}
+
+.about-homepage-inner {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.about-homepage-inner > img {
+  width: min(100%, 520px);
+  height: auto;
+  margin-bottom: 52px;
+}
+
+.about-homepage-copy {
+  width: min(100%, 920px);
+  padding: 36px 28px;
+  background: rgba(255, 250, 238, 0.86);
+  border-radius: 8px;
+}
+
+.about-homepage-copy h2 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.about-homepage-copy p {
+  margin-bottom: 6px;
+  color: var(--color-muted);
+}
+
+.about-homepage-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-homepage-note {
+  max-width: 860px;
+  margin: 40px auto 0;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.about-design-field-section {
+  background: var(--color-white);
+}
+
+.about-design-field-inner {
+  text-align: center;
+}
+
+.about-design-field-inner h2 {
+  margin-bottom: 42px;
+  font-size: clamp(1.7rem, 2.6vw, 2.25rem);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.about-design-field-inner h2 span {
+  margin-left: 8px;
+}
+
+.about-design-field-inner img {
+  width: min(100%, 860px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.about-product-export-section {
+  background: var(--color-export-soft);
+}
+
+.about-product-export-inner {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.about-product-export-copy {
+  margin-bottom: 48px;
+}
+
+.about-product-export-copy h2 {
+  margin-bottom: 16px;
+  color: var(--color-text);
+  font-size: clamp(1.25rem, 2vw, 1.45rem);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.about-product-export-copy h2 span {
+  margin-left: 6px;
+}
+
+.about-product-export-copy p {
+  margin-bottom: 0;
+  color: var(--color-text);
+  font-size: 0.92rem;
+}
+
+.about-product-export-inner > img {
+  width: min(100%, 840px);
+  height: auto;
+}
+
+
+/* Works */
+
+.works-preview {
+  background: var(--color-works-soft);
+}
+
+.works-preview-inner {
+  width: min(100% - 32px, 1000px);
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+}
+
+.works-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+

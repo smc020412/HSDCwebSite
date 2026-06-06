@@ -1,0 +1,90 @@
+.contact-page {
+  min-height: calc(100vh - 141px);
+  background: var(--color-page-bg);
+}
+
+.contact-page-inner {
+  width: min(100% - 32px, 1280px);
+  text-align: center;
+}
+
+.contact-decoration {
+  width: min(100%, 160px);
+  height: auto;
+  margin: 0 auto 24px;
+}
+
+.contact-heading {
+  max-width: 900px;
+  margin: 0 auto 72px;
+}
+
+.contact-heading h1 {
+  max-width: none;
+  margin-bottom: 18px;
+  color: var(--color-primary);
+  font-size: 1.55rem;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.contact-heading p {
+  margin-bottom: 0;
+  color: var(--color-copy);
+  font-size: 0.94rem;
+}
+
+.contact-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  text-align: left;
+}
+
+.contact-card {
+  min-height: 218px;
+  padding: 52px 46px;
+  background: var(--color-white);
+}
+
+.contact-card h2 {
+  margin-bottom: 14px;
+  color: #273247;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.contact-card .contact-subtitle {
+  margin-top: 28px;
+}
+
+.contact-card p {
+  margin-bottom: 10px;
+  color: var(--color-black);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-email {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.contact-phone {
+  font-size: 1.28rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.contact-address-detail {
+  padding-left: 34px;
+}
+
