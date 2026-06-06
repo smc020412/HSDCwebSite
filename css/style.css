@@ -162,6 +162,8 @@ h1 {
   flex-wrap: wrap;
   margin-top: 20px;
   gap: 0.18em 0.28em;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 .hero-word {
@@ -178,6 +180,13 @@ h1 {
 
 .hero-initial {
   transition: color 0.32s ease, text-shadow 0.32s ease;
+}
+
+.hero-initial.letter-h,
+.hero-initial.letter-s,
+.hero-initial.letter-d,
+.hero-initial.letter-c {
+  color: #000000;
 }
 
 .letter-h {
@@ -749,6 +758,10 @@ h2 {
   letter-spacing: 0;
 }
 
+.contact-card .contact-subtitle {
+  margin-top: 28px;
+}
+
 .contact-card p {
   margin-bottom: 10px;
   color: #000000;
@@ -764,6 +777,12 @@ h2 {
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.4;
+}
+
+.contact-phone {
+  font-size: 1.28rem;
+  font-weight: 800;
+  line-height: 1.5;
 }
 
 .contact-address-detail {
@@ -906,6 +925,10 @@ h2 {
   object-fit: cover;
   background: #ffffff;
   border-radius: 4px;
+}
+
+.works-character-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* Footer */
@@ -1095,6 +1118,10 @@ h2 {
   .works-product-grid {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .works-character-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-inner {
